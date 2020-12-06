@@ -9,6 +9,8 @@
 
 PyTorch Lightning的精华主要在两个模块LightningModule和Trainer，其他API包括Accelerators、Callback、LightningDataModule、Logging、Metrics和Plugins。其中Accelerators和Plugins几乎用不到，Callback应该很眼熟吧，就和Keras的Callback差不多，但功能更丰富，逻辑更灵活，LightningDataModule是数据模块，Logging是个日志模块，Metrics是指标模块。**最重要的来了，LightningDataModule、Logging、Metrics都是垃圾，不要学！不要学！不要学！我们只学LightningModule、Trainer和Callback**，附上[官方教程](https://pytorch-lightning.readthedocs.io/en/latest/)。
 
+**本教程针对学过Pytorch的人群，再看本教程之前，可以先看看[Pytorch](https://github.com/zergtant/pytorch-handbook)和官方的[自编码器小例子](https://github.com/PyTorchLightning/pytorch-lightning)。**
+
 # 环境搭建
 
 两步：
