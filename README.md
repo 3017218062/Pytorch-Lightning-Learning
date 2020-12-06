@@ -16,4 +16,8 @@
 
 # pytorch-lightning入门到精通（5）
 
+[自定义各种Callback](./pytorch-lightning入门到精通（5）.md)
+
 # pytorch-lightning入门到精通（6）
+
+[CCF2020训练赛：通用音频分类/5天上0.97585955分](./pytorch-lightning入门到精通（6）.md)
