@@ -197,7 +197,7 @@
   model = CustomModel()
   ```
 
-- 定义进度条和学习曲线
+- 定义进度条和学习曲线（我不喜欢官方的进度条，所以自己写了一个）
 
   ```python
   class FlexibleTqdm(Callback):
@@ -263,7 +263,7 @@
           plt.show()
   ```
 
-- 设置训练参数
+- 设置训练参数（我不喜欢用logger，所以全关闭了）
 
   ```python
   trainer_params = {
@@ -274,7 +274,7 @@
       "progress_bar_refresh_rate": 0,  # 1
       "num_sanity_val_steps": 0,  # 2
       "callbacks": [
-          FlexibleTqdm(len(train_dataset) // batch_size, column_width=12),
+          FlexibleTqdm(len(train_dataset) // batch_size, column_width=12), # 注意设置progress_bar_refresh_rate=0，取消自带的进度条
           LearningCurve(figsize=(12, 4), names=("loss", "acc", "f1")),
       ],  # None
   }
